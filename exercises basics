@@ -26,4 +26,45 @@ void main() {
   String initials = nameParts[0][0] + '.' + nameParts[1][0] + '.';
   
   print(initials);
+  
+  // 4. Booleans und Vergleichsoperatoren und Kontrollstrukturen
+  bool isOnline = true;
+  bool freundIsOnline = false;
+  
+  if(isOnline && freundIsOnline == true) {
+    print('Beide Benutzer sind online');
+  }else if (isOnline != freundIsOnline){
+    print('Nur ein Benutzer ist online');
+  } else {
+    print ('Kein Benutzer ist online');
+  }
+  
+ int alterVonTom = 16;
+ bool hatFuehrerschein = false;
+ 
+  if(alterVonTom >= 18 && hatFuehrerschein) {
+    print('Tom darf Auto fahren');
+  } else if(alterVonTom >= 18 && !hatFuehrerschein) {
+     print('Tom ist zwar alt genug, hat aber keinen Führerschein');
+  } else {
+    print('Tom darf kein Auto fahren');
+  }
+  
+  int zahlA = 17;
+  int zahlB = 49;
+  
+  if (zahlA > zahlB) {
+    print('ZahlA ($zahlA) ist größer als ZahlB ($zahlB).');    
+  } else {
+      print('ZahlB ($zahlB) ist größer als ZahlA ($zahlA).');
+  }
+  
+  String nameA = "Alice";
+  String nameB = "Alice";
+  
+  if (nameA == nameB) {
+    print('Die Namen sind identisch.');
+  } else {
+    print('Die Namen sind nicht identisch.');
+  }
 }

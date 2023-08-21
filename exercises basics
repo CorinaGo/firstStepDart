@@ -1,0 +1,29 @@
+import 'dart:math';
+
+void main() {
+   
+  // 1. Variablen und Datentypen
+  String stadt = "Berlin";
+  int alter = 25;
+  double groesse = 1.75;
+  print('Ich lebe in $stadt, bin $alter Jahre und bin $groesse.');
+  
+  // 2. Mathematische Operationen
+  double radius = 17.6;
+  int hoehe = 37;
+  
+  num ergebnis = pi * hoehe * (radius * 2);
+  print(ergebnis);
+  
+  // 3. Zeichenketten
+  String name = 'Ester Langnese';
+  print(name.toUpperCase());
+  
+    // Teilt den String anhand von Leerzeichen, um Vor- und Nachname zu erhalten
+  List<String> nameParts = name.split(' ');
+  
+  // Nimmt den ersten Buchstaben des Vornamens und des Nachnamens
+  String initials = nameParts[0][0] + '.' + nameParts[1][0] + '.';
+  
+  print(initials);
+}
